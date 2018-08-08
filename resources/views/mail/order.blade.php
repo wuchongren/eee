@@ -1,0 +1,1 @@
+<h1>尊敬的商家，客户下单。单号为：{{$msg->sn}}。送餐地址：{{$msg->provence.$msg->city.$msg->area.$msg->detail_address}},电话：{{$msg->tel}}总金额为：{{ $msg->total }}元</h1>
