@@ -15,7 +15,7 @@
 //    return "欢迎你";
 //});
 //平台后端
-Route::domain('eleAdmin.chenxiaolong520.com')->namespace('Admin')->group(function () {
+Route::domain('eleadmin.chenxiaolong520.com')->namespace('Admin')->group(function () {
     //平台管理员管理
     Route::get('admin/index', "AdminController@index")->name('admin.index');
     Route::any('admin/add', "AdminController@add")->name('admin.add');
@@ -101,7 +101,7 @@ Route::domain('eleAdmin.chenxiaolong520.com')->namespace('Admin')->group(functio
 });
 
 //商家客户端
-Route::domain('eleShop.chenxiaolong520.com')->namespace('Shop')->group(function () {
+Route::domain('eleshop.chenxiaolong520.com')->namespace('Shop')->group(function () {
     //订单管理
     Route::any('shopOrder/index', "ShopOrderController@index")->name('shopOrder.index');
     Route::any('shopOrder/show/{id}', "ShopOrderController@show")->name('shopOrder.show');
